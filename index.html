@@ -5,30 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leuechotzeler.ch</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    animation: {
-                        'appear': 'appear 2s ease-in'
-                    },
-                    keyframes: {
-                        'appear': {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <main class="h-screen relative overflow-x-hidden">
-        <img class="w-full h-full grayscale absolute -z-0 object-cover" src="assets/lion-monument.jpg" alt="Foto Löwendenkmal Luzern" />
-        <div class="w-full h-full bg-gray-900 bg-opacity-70 relative z-10 flex items-center justify-center">
-            <div class="xl:w-2/5 lg:w-3/5 md:w-4/5 md:px-0 w-full px-3 flex flex-col justify-between animate-appear">
+        <img class="w-full h-full grayscale object-cover -z-0" src="assets/lion-monument.jpg" alt="Foto Löwendenkmal Luzern" />
+        <section class="w-full h-full top-0 absolute z-10 flex items-center justify-center bg-gray-900 bg-opacity-70">
+            <div class="xl:w-2/5 lg:w-3/5 md:w-4/5 md:px-0 w-full px-3 flex-col justify-between flex animate-appear">
                 <div class="w-full flex justify-center">
                     <img class="w-2/4 opacity-100" src="assets/logo.png" alt="Jubi Logo der Leuechotzeler Luzern" />
                 </div>
@@ -36,7 +19,7 @@
                     Noch ruht der Löwe, aber bald…
                 </h1>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
